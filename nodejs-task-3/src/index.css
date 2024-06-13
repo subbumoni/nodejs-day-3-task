@@ -1,0 +1,107 @@
+body
+{
+  background:rgb(112, 112, 213);
+}
+
+/* Header Text */
+.header-text
+{
+  color: white;
+  font-weight: 700;
+}
+
+/* Side Bar */
+.fixed-left {
+  background-color: rgb(24, 29, 49);
+  box-shadow: 0px 0px 2px rgb(40, 50, 101);
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 250px;
+  z-index: 1000;
+  overflow-x: hidden;
+  transition: all 0.3s;
+}
+
+.content {
+  margin-left: 250px;
+  padding: 20px;
+  width: calc(100% - 250px);
+}
+
+.navbar-link
+{
+  text-decoration: none;
+}
+
+.navbar-link:hover 
+{
+  color: rgb(106, 106, 106) !important;
+}
+
+/* Student and Mentor Container */
+.create-mentor,
+.create-student,
+.assign-students,
+.change-mentor,
+.previous-mentor,
+.show-students
+{
+  background-color: white;
+  width: 90%;
+  border-radius: 10px;
+  box-shadow: 0 0 5px rgb(59, 59, 59);
+  padding: 15px 0px 20px 0px;
+}
+
+/* Mentor and student inputs */
+#mentor-name-input,
+#mentor-email-input,
+#student-name-input,
+#student-email-input
+{
+  /* width: 70%; */
+  border: 2px solid rgb(57, 57, 57);
+  border-radius: 5px;
+  margin-bottom: 15px;
+  padding: 10px 0px 10px 5px;
+}
+
+/* Select Drop Down Style */
+.form-select
+{
+  /* width: 70%; */
+  border: 2px solid rgb(57, 57, 57);
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+/* Form Check box style */
+.form-check-input
+{
+  border: 1px solid rgb(57, 57, 57);
+  cursor: pointer;
+}
+
+/* Students list */
+.list-group-item
+{
+  border: 2px solid rgb(57, 57, 57);
+}
+
+/* Media Query for 576px */
+@media screen and (max-width: 576px) {
+
+  .fixed-left
+  {
+    width: 200px;
+  }
+
+  .content {
+    margin-left: 200px;
+    padding: 20px;
+    width: calc(100% - 200px);
+  }
+
+}
